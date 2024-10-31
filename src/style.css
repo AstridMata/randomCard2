@@ -1,5 +1,4 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-
 * {
   outline-style: none;
   margin: 0;
@@ -12,14 +11,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: none;
 }
+
 .my-card {
   background-color: white;
   width: 300px;
   height: 450px;
   border-radius: 10px;
 }
+
 .header-card {
   height: 150px;
   font-size: 80px;
@@ -27,12 +27,14 @@
   line-height: 100px;
   padding-top: 20px;
 }
+
 .center-card {
   height: 150px;
   text-align: center;
   font-size: 80px;
   padding-top: 20px;
 }
+
 .footer-card {
   height: 150px;
   font-size: 80px;
@@ -41,7 +43,7 @@
   transform: rotate(180deg);
 }
 
-span.numero {
+span.number {
   font-size: 100%;
   line-height: 100px;
 }

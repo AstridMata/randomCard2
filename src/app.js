@@ -7,10 +7,8 @@ import "./assets/img/4geeks.ico";
 //import { doc } from "prettier";
 
 window.onload = function() {
-  //write your code here
-  //let palos = ["♦", "♥", "♠", "♣"];
-
-  let numeros = [
+  // Write your code here
+  let numbers = [
     "A",
     "2",
     "3",
@@ -25,22 +23,21 @@ window.onload = function() {
     "Q",
     "K"
   ];
-  let numero = numeros[Math.floor(Math.random() * (13 - 0) + 0)];
+  let number = numbers[Math.floor(Math.random() * (13 - 0) + 0)];
 
-  var palos = [
+  var suits = [
     { s: "♦", color: "red" },
     { s: "♥", color: "red" },
     { s: "♠", color: "black" },
     { s: "♣", color: "black" }
   ];
 
-  let palo = palos[Math.floor(Math.random() * (4 - 0) + 0)];
-  //console.log(palo);
+  let suit = suits[Math.floor(Math.random() * (4 - 0) + 0)];
 
-  document.querySelectorAll(".palo").forEach((elem, index) => {
-    elem.innerHTML = palo.s;
-    elem.style.color = palo.color;
+  document.querySelectorAll(".suit").forEach((elem, index) => {
+    elem.innerHTML = suit.s;
+    elem.style.color = suit.color;
   });
-  document.querySelector(".numero").innerHTML = numero;
-  document.querySelector(".numero").style.color = palo.color;
+  document.querySelector(".number").innerHTML = number;
+  document.querySelector(".number").style.color = suit.color;
 };
